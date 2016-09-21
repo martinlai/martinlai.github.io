@@ -74,26 +74,14 @@ The content `<div>` is where all your content goes.
 }
 
 
+.projects .pure-g *{
+  margin: 0.5em auto;
+  max-width: 300px;
+  text-align: center;
+
+}
 
 /*
 The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
 appears on the left side of the page.
 */
-
-
-
-/* -- Responsive Styles (Media Queries) ------------------------------------- */
-
-/*
-Hides the menu at `48em`, but modify this based on your app's needs.
-*/
-@media (min-width: 48em) {
-
-    .header,
-    .content {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-
-
-}

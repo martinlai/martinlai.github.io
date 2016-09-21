@@ -34,6 +34,22 @@ The content `<div>` is where all your content goes.
   line-height: 1.6em;
 }
 
+.button-nav {
+	background: #fff;
+	color: #52616A;
+	cursor: pointer;
+}
+
+.button-nav:hover, .button-nav:focus, .button-nav:active {
+  background-image: none;
+  outline: none;
+  border-color: #fff;
+  box-shadow: none;
+
+}
+
+
+
 .content {
     margin: 0 auto;
     padding: 0;

@@ -6,13 +6,16 @@
     <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
     <title>Martin Lai</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/layouts/side-menu.css">
     <link href="css/layouts/hover.css" rel="stylesheet" media="all">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script>
 
     $(document).ready(function (){
-        $(".button-nav").click(function (){
+        $(".scroll").click(function (){
             $('html, body').animate({
                 scrollTop: $(".projects").offset().top
             }, 2000);
@@ -35,23 +38,23 @@
 
           <div class="navbar">
             <div class="pure-g">
-              <div class="pure-u-1-4 pure-u-md-1 pure-u-sm-1">
-                <a class="pure-button button-nav hvr-underline-from-center" href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; About </a>
+              <div class="pure-u-1 pure-u-md-1-4">
+                <a class="pure-button button-nav hvr-underline-from-center scroll" href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; About </a>
               </div>
 
 
-              <div class="pure-u-1-4 pure-u-md-1 pure-u-sm-1">
-                <a class="button-nav pure-button hvr-underline-from-center" href="#"><i class="fa fa-suitcase" aria-hidden="true"></i>&nbsp; Projects </a>
+              <div class="pure-u-1 pure-u-md-1-4">
+                <a class="button-nav pure-button hvr-underline-from-center scroll" href="#"><i class="fa fa-suitcase" aria-hidden="true"></i>&nbsp; Projects </a>
               </div>
 
 
-              <div class="pure-u-1-4 pure-u-md-1 pure-u-sm-1">
-                <a class="button-nav pure-button hvr-underline-from-center" href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp; Resume </a>
+              <div class="pure-u-1 pure-u-md-1-4">
+                <a class="button-nav pure-button hvr-underline-from-center scroll" href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp; Resume </a>
               </div>
 
 
-              <div class="pure-u-1-4 pure-u-md-1 pure-u-sm-1">
-                <a class="button-nav pure-button hvr-underline-from-center" href="#"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; Contact </a>
+              <div class="pure-u-1 pure-u-md-1-4">
+                <a class="button-nav pure-button hvr-underline-from-center scroll" href="#"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; Contact </a>
               </div>
 
             </div>
@@ -67,25 +70,25 @@
 
               <div class="projects">
                 <div class="pure-g">
-                    <div class="pure-u-1-3 pure-u-md-1 pure-u-sm-1">
+                    <div class="pure-u-1 pure-u-sm-1-3">
                         <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
                     </div>
-                    <div class="pure-u-1-3 pure-u-md-1 pure-u-sm-1">
+                    <div class="pure-u-1 pure-u-sm-1-3">
                         <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
                     </div>
-                    <div class="pure-u-1-3 pure-u-md-1 pure-u-sm-1">
+                    <div class="pure-u-1 pure-u-sm-1-3">
                         <img class="pure-img-responsive" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
                     </div>
                 </div>
 
                 <div class="pure-g">
-                  <div class="pure-u-1-3 pure-u-md-1 pure-u-sm-1">
+                  <div class="pure-u-1 pure-u-sm-1-3">
                       <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
                   </div>
-                  <div class="pure-u-1-3 pure-u-md-1 pure-u-sm-1">
+                  <div class="pure-u-1 pure-u-sm-1-3">
                       <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
                   </div>
-                  <div class="pure-u-1-3 pure-u-md-1 pure-u-sm-1">
+                  <div class="pure-u-1 pure-u-sm-1-3">
                       <img class="pure-img-responsive" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
                   </div>
                 </div>
@@ -94,16 +97,66 @@
 
               <h2 class="content-subhead">Resume</h2>
               <p id="scroll">Under Construction</p>
+
+
+
           </div>
+
+
+
       </div>
+
+
+      <div class="content footer">
+        <hr/>
+        <h2 class="content-subhead underline">Contact</h2>
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-11-24">
+            <form class="pure-form pure-form-stacked">
+              <fieldset>
+
+                  <label for="name">Your Name</label>
+                  <input class="pure-input-1" id="name" type="text" placeholder="Name">
+
+                  <label for="email">Your Email</label>
+                  <input class="pure-input-1" id="email" type="text" placeholder="Email">
+
+                  <label for="message">Your Email</label>
+                  <textarea class="pure-input-1" id="message" type="text" placeholder="Message"></textarea>
+
+                  <button type="submit" class="pure-button">Send</button>
+              </fieldset>
+            </form>
+          </div>
+
+          <div class="pure-u-1 pure-u-md-13-24">
+            <div class="pure-g">
+              <div class="pure-u-1 pure-u-md-1-3">
+                  <a class="pure-button button-nav" target="_blank" href="https://ca.linkedin.com/in/marlai"><i class="fa fa-linkedin-square" id="linkedin-icon" aria-hidden="true"></i></a>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-3">
+                  <a class="pure-button button-nav" target="_blank" href="https://github.com/martinlai"><i class="fa fa-github" id="github-icon" aria-hidden="true"></i></a>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-3">
+                  <a class="pure-button button-nav" target="_blank" href="#"><i class="fa fa-github" id="misc" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
   </div>
 
 
 
 
 
-
-
-
 </body>
+
+
+
+
 </html>

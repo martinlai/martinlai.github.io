@@ -10,27 +10,22 @@
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
     <link rel="stylesheet" href="css/layouts/side-menu.css">
     <link href="css/layouts/hover.css" rel="stylesheet" media="all">
-    <script>
-
-    $(document).ready(function (){
-       $('#cubeworld_p').popup();
-       $('#resohm_p').popup();
-       $('#libero_p').popup();
-       $('#trendify_p').popup();
-       $('#map_p').popup();
-       $('#plant_p').popup();
-
-        $(".scroll").click(function (){
-            $('html, body').animate({
-                scrollTop: $(".projects").offset().top
-            }, 2000);
-        });
-    });
-    </script>
     <script src="https://use.fontawesome.com/bf65e992a0.js"></script>
+    <script src="js/projects.js" type='text/javascript'></script>
+    <script src="js/ui.js" type='text/javascript'></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-84652005-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 </head>
 
 
@@ -79,84 +74,44 @@
               <div class="projects">
                 <div class="pure-g">
                     <div class="pure-u-1 pure-u-sm-1-3">
-                        <img class="pure-img-responsive cubeworld_p_open" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
+                        <img class="pure-img-responsive cubeworld_open" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
                     </div>
                     <div class="pure-u-1 pure-u-sm-1-3">
-                        <img class="pure-img-responsive resohm_p_open" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
+                        <img class="pure-img-responsive resohm_open" src="resources/resohm.png" alt="ResOhm">
                     </div>
                     <div class="pure-u-1 pure-u-sm-1-3">
-                        <img class="pure-img-responsive trendify_p_open" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
+                        <img class="pure-img-responsive trendify_open" src="resources/trendify.jpg" alt="Trendify">
                     </div>
                 </div>
 
                 <div class="pure-g">
                   <div class="pure-u-1 pure-u-sm-1-3">
-                      <img class="pure-img-responsive libero_p_open" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
+                      <img class="pure-img-responsive libero_open" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
                   </div>
                   <div class="pure-u-1 pure-u-sm-1-3">
-                      <img class="pure-img-responsive map_p_open"  src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
+                      <img class="pure-img-responsive map_open"  src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
                   </div>
                   <div class="pure-u-1 pure-u-sm-1-3">
-                      <img class="pure-img-responsive plant_p_open" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
+                      <img class="pure-img-responsive plant_open" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
                   </div>
                 </div>
-
             </div>
 
-              <h2 class="content-subhead">Resume</h2>
-              <p id="scroll">Under Construction</p>
-
-
-
-          </div>
-
-
+            <div id="accordion">
+              <h2 class="content-subhead">Resume <i class="fa fa-caret-square-o-right" aria-hidden="true" style="font-size:0.5em"></i></h3>
+              <div class="center" ><img class="pure-img-responsive" src="resources/resume.jpg" alt="Resume"></div>
+            </div>
 
       </div>
 
-      <div id="cubeworld_p">
-
-        ...popup content...
-
-      </div>
-      <div id="resohm_p">
-
-        ...popup content...
-
-
-
-      </div>
-      <div id="libero_p">
-
-        ...popup content...
-
-
-
-      </div>
-      <div id="trendify_p">
-
-        ...popup content...
-
-
-      </div>
-      <div id="map_p">
-
-
-
-      </div>
-      <div id="plant_p">
-
-
-
-      </div>
 
       <div class="content footer">
         <hr/>
         <h2 class="content-subhead underline">Contact</h2>
         <div class="pure-g">
-          <div class="pure-u-1 pure-u-md-11-24">
-            <form class="pure-form pure-form-stacked">
-              <fieldset>
+          <div class="pure-u-1 pure-u-md-13-24" style="margin: auto;">
+            <form class="pure-form pure-form-stacked" style="margin: auto; ">
+              <fieldset style="text-align:center;">
 
                   <label for="name">Your Name</label>
                   <input class="pure-input-1" id="name" type="text" placeholder="Name">
@@ -164,7 +119,7 @@
                   <label for="email">Your Email</label>
                   <input class="pure-input-1" id="email" type="text" placeholder="Email">
 
-                  <label for="message">Your Email</label>
+                  <label for="message">Your Message</label>
                   <textarea class="pure-input-1" id="message" type="text" placeholder="Message"></textarea>
 
                   <button type="submit" class="pure-button">Send</button>
@@ -172,34 +127,21 @@
             </form>
           </div>
 
-          <div class="pure-u-1 pure-u-md-13-24">
+          <div class="pure-u-1 pure-u-md-11-24" style="margin: auto;">
             <div class="pure-g">
-              <div class="pure-u-1 pure-u-md-1-3">
+              <div class="pure-u-1-3 ">
                   <a class="pure-button button-nav" target="_blank" href="https://ca.linkedin.com/in/marlai"><i class="fa fa-linkedin-square" id="linkedin-icon" aria-hidden="true"></i></a>
               </div>
-              <div class="pure-u-1 pure-u-md-1-3">
+              <div class="pure-u-1-3 ">
                   <a class="pure-button button-nav" target="_blank" href="https://github.com/martinlai"><i class="fa fa-github" id="github-icon" aria-hidden="true"></i></a>
               </div>
-              <div class="pure-u-1 pure-u-md-1-3">
+              <div class="pure-u-1-3 ">
                   <a class="pure-button button-nav" target="_blank" href="#"><i class="fa fa-github" id="misc" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
         </div>
-
       </div>
-
-
-
   </div>
-
-
-
-
-
 </body>
-
-
-
-
 </html>

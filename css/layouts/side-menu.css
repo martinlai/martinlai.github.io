@@ -7,17 +7,6 @@ body {
     height: auto;
 }
 
-#layout
-
-#layout {
-    position: relative;
-    padding-left: 0;
-}
-    #layout.active {
-        left: 150px;
-        width: 150px;
-    }
-
 
 /*
 The content `<div>` is where all your content goes.
@@ -46,10 +35,10 @@ The content `<div>` is where all your content goes.
 
 
 .content {
-    margin: 0.2em auto;
+    margin: 0.5em auto;
     padding-left: 0.2em;
     padding-right: 0.2em;
-    max-width: 1300px;
+    max-width: 1200px;
     margin-top: 25px;
     line-height: 1.6em;
 }
@@ -100,7 +89,6 @@ The content `<div>` is where all your content goes.
 
 .footer .pure-g * {
   text-align: center;
-  max-width: 90%;
 
 }
 
@@ -128,6 +116,21 @@ html, button, input, select, textarea,
     font-size: 1.1em;
 }
 
+
+video {
+  margin: 0.2em auto;
+  height:100%;
+  width: 100%;
+}
+
+.center
+ {
+  text-align: center;
+}
+
+h2 {
+  outline: none;
+}
 /*
 The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
 appears on the left side of the page.

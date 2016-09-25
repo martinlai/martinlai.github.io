@@ -4,7 +4,7 @@ $(document).ready(function (){
   if (projects.hasOwnProperty(project)) {
      $('#layout').append(`
          <div id="`+project+`">
-           <h2 class="content-subhead center">About</h2>
+           <h2 class="content-subhead center">`+projects[project].dispname+`</h2>
            <div class="pure-g">
              <div class="pure-u-1" style="margin: auto; width:60%">
                <video class="video_tag" controls preload="metadata">
@@ -27,7 +27,7 @@ $(document).ready(function (){
                <p>`+projects[project].technologies+`</p>
              </div>
              <div class="pure-u-1 pure-u-md-5-24">
-               <p>PLACEHOLDER</p>
+                 <a class="pure-button button-nav" target="_blank" id="github-icon" href="`+projects[project].github+`"><i class="fa fa-github" aria-hidden="true"></i></a>
              </div>
            </div>
          </div>`)
@@ -88,7 +88,7 @@ for(var i = 0; i < scrollsections.length; i++) {
 
   $("#"+scrollsections[i]+"-button").click(function (){
           if(this.id == "resume-button") {
-            $("#accordion").accordion("option", "active", 0);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+            $("#accordion").accordion("option", "active", 0);
           }
 
           disableScroll();

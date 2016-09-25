@@ -1,30 +1,30 @@
 var projects = {
   cubeworld:{
-    video:"movie.mp4",
+    video:"cubeworld.mp4",
     desc:"loldesc",
     improvements:"lolimprovements",
     technologies:"loltechnologies",
   },
   resohm:{
-    video:"movie.mp4",
+    video:"resohm.mp4",
     desc:"loldesc",
     improvements:"lolimprovements",
     technologies:"loltechnologies",
   },
   libero:{
-    video:"movie.mp4",
+    video:"libero.mp4",
     desc:"loldesc",
     improvements:"lolimprovements",
     technologies:"loltechnologies",
   },
   trendify:{
-    video:"movie.mp4",
+    video:"trendify.mp4",
     desc:"loldesc",
     improvements:"lolimprovements",
     technologies:"loltechnologies",
   },
   map:{
-    video:"movie.mp4",
+    video:"map.mp4",
     desc:"loldesc",
     improvements:"lolimprovements",
     technologies:"loltechnologies",

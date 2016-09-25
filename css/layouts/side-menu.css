@@ -131,7 +131,7 @@ video {
 h2 {
   outline: none;
 }
-/*
-The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
-appears on the left side of the page.
-*/
+
+.projects .pure-g * {
+  cursor: pointer;
+}

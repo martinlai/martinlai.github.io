@@ -9,6 +9,20 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-database.js"></script>
+    <script>
+      var config = {
+        apiKey: "AIzaSyACUEr7ibkExPd0-YT1fy5ylLBPuOPZFgA",
+        authDomain: "martinwebsite-16627.firebaseapp.com",
+        databaseURL: "https://martinwebsite-16627.firebaseio.com",
+        storageBucket: "",
+        messagingSenderId: "721146077778"
+      };
+      firebase.initializeApp(config);
+      var database = firebase.database();
+    </script>
+
     <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
@@ -41,23 +55,23 @@
 
           <div class="navbar">
             <div class="pure-g">
-              <div class="pure-u-1 pure-u-md-1-4">
-                <a class="pure-button button-nav hvr-underline-from-center scroll" href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; About </a>
+              <div class="pure-u-1 pure-u-md-1-4" id="about-button">
+                <a class="pure-button button-nav hvr-underline-from-center scroll" href="#"><i class="fa fa-user" aria-hidden="true" ></i>&nbsp; About </a>
               </div>
 
 
-              <div class="pure-u-1 pure-u-md-1-4">
-                <a class="button-nav pure-button hvr-underline-from-center scroll" href="#"><i class="fa fa-suitcase" aria-hidden="true"></i>&nbsp; Projects </a>
+              <div class="pure-u-1 pure-u-md-1-4" id="projects-button">
+                <a class="button-nav pure-button hvr-underline-from-center scroll" href="#"><i class="fa fa-suitcase" aria-hidden="true" ></i>&nbsp; Projects </a>
               </div>
 
 
-              <div class="pure-u-1 pure-u-md-1-4">
-                <a class="button-nav pure-button hvr-underline-from-center scroll" href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp; Resume </a>
+              <div class="pure-u-1 pure-u-md-1-4" id="resume-button">
+                <a class="button-nav pure-button hvr-underline-from-center scroll" href="#"><i class="fa fa-file-text-o" aria-hidden="true" ></i>&nbsp; Resume </a>
               </div>
 
 
-              <div class="pure-u-1 pure-u-md-1-4">
-                <a class="button-nav pure-button hvr-underline-from-center scroll" href="#"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; Contact </a>
+              <div class="pure-u-1 pure-u-md-1-4" id="contact-button">
+                <a class="button-nav pure-button hvr-underline-from-center scroll" href="#"><i class="fa fa-envelope" aria-hidden="true" ></i>&nbsp; Contact </a>
               </div>
 
             </div>
@@ -66,40 +80,40 @@
 
           <div class="content">
 
-              <h2 class="content-subhead">About</h2>
+              <h2 class="content-subhead" id="about">About</h2>
               <p>Under Construction</p>
 
-              <h2 class="content-subhead">Projects</h2>
+              <h2 class="content-subhead" id="projects">Projects</h2>
 
               <div class="projects">
                 <div class="pure-g">
-                    <div class="pure-u-1 pure-u-sm-1-3">
-                        <img class="pure-img-responsive cubeworld_open" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
+                    <div class="pure-u-1 pure-u-sm-1-3 hvr-curl-top-right hvr-glow">
+                        <img class="pure-img-responsive cubeworld_open" src="resources/cubeworld.jpg" alt="Peyto Lake">
                     </div>
-                    <div class="pure-u-1 pure-u-sm-1-3">
-                        <img class="pure-img-responsive resohm_open" src="resources/resohm.png" alt="ResOhm">
+                    <div class="pure-u-1 pure-u-sm-1-3 hvr-curl-top-right hvr-glow">
+                        <img class="pure-img-responsive resohm_open" src="resources/resohm.jpg" alt="ResOhm">
                     </div>
-                    <div class="pure-u-1 pure-u-sm-1-3">
+                    <div class="pure-u-1 pure-u-sm-1-3 hvr-curl-top-right hvr-glow">
                         <img class="pure-img-responsive trendify_open" src="resources/trendify.jpg" alt="Trendify">
                     </div>
                 </div>
 
                 <div class="pure-g">
-                  <div class="pure-u-1 pure-u-sm-1-3">
-                      <img class="pure-img-responsive libero_open" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
+                  <div class="pure-u-1 pure-u-sm-1-3 hvr-curl-top-right hvr-glow">
+                      <img class="pure-img-responsive map_open"  src="resources/map.jpg" alt="LiveAtlas">
                   </div>
-                  <div class="pure-u-1 pure-u-sm-1-3">
-                      <img class="pure-img-responsive map_open"  src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
+                  <div class="pure-u-1 pure-u-sm-1-3 hvr-curl-top-right hvr-glow">
+                      <img class="pure-img-responsive libero_open" src="resources/libero.jpg" alt="Libero">
                   </div>
-                  <div class="pure-u-1 pure-u-sm-1-3">
-                      <img class="pure-img-responsive plant_open" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
+                  <div class="pure-u-1 pure-u-sm-1-3 hvr-curl-top-right hvr-glow">
+                      <img class="pure-img-responsive plant_open" src="resources/plant.jpg" alt="Talk2Plants">
                   </div>
                 </div>
             </div>
 
             <div id="accordion">
-              <h2 class="content-subhead">Resume <i class="fa fa-caret-square-o-right" aria-hidden="true" style="font-size:0.5em"></i></h3>
-              <div class="center" ><img class="pure-img-responsive" src="resources/resume.jpg" alt="Resume"></div>
+              <h2 class="content-subhead hvr-icon-wobble-horizontal" id="resume" style="cursor:pointer">Resume</h3>
+              <div class="center"><img class="pure-img-responsive" src="resources/resume.jpg" alt="Resume" style="color:yellow"></div>
             </div>
 
       </div>
@@ -107,7 +121,7 @@
 
       <div class="content footer">
         <hr/>
-        <h2 class="content-subhead underline">Contact</h2>
+        <h2 class="content-subhead underline" id="contact">Contact</h2>
         <div class="pure-g">
           <div class="pure-u-1 pure-u-md-13-24" style="margin: auto;">
             <form class="pure-form pure-form-stacked" style="margin: auto; ">
@@ -122,21 +136,18 @@
                   <label for="message">Your Message</label>
                   <textarea class="pure-input-1" id="message" type="text" placeholder="Message"></textarea>
 
-                  <button type="submit" class="pure-button">Send</button>
+                  <button type="submit" class="pure-button" id="send-button">Send</button>
               </fieldset>
             </form>
           </div>
 
           <div class="pure-u-1 pure-u-md-11-24" style="margin: auto;">
             <div class="pure-g">
-              <div class="pure-u-1-3 ">
+              <div class="pure-u-12-24">
                   <a class="pure-button button-nav" target="_blank" href="https://ca.linkedin.com/in/marlai"><i class="fa fa-linkedin-square" id="linkedin-icon" aria-hidden="true"></i></a>
               </div>
-              <div class="pure-u-1-3 ">
+              <div class="pure-u-12-24">
                   <a class="pure-button button-nav" target="_blank" href="https://github.com/martinlai"><i class="fa fa-github" id="github-icon" aria-hidden="true"></i></a>
-              </div>
-              <div class="pure-u-1-3 ">
-                  <a class="pure-button button-nav" target="_blank" href="#"><i class="fa fa-github" id="misc" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>

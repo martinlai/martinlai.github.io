@@ -4,16 +4,17 @@ $(document).ready(function (){
   if (projects.hasOwnProperty(project)) {
      $('#layout').append(`
          <div id="`+project+`">
+           <h3 class="`+project+`_close" style="text-align:right; cursor:pointer; padding-right:0.3em"><i class="fa fa-times" aria-hidden="true"></i></a>
            <h2 class="content-subhead center">`+projects[project].dispname+`</h2>
            <div class="pure-g">
-             <div class="pure-u-1" style="margin: auto; width:60%">
+             <div class="pure-u-1" style="margin: auto; width:75%">
                <video class="video_tag" controls preload="metadata">
                  <source src="resources/`+projects[project].video+`" type="video/mp4">
                </video>
              </div>
            </div>
 
-           <div class="pure-g" style="width:120%; text-align:left;">
+           <div class="pure-g" style="width:100%; text-align:left;">
              <div class="pure-u-1 pure-u-md-8-24">
                <h2 class="content-subhead">Description</h2>
                <p>`+projects[project].desc+`</p>

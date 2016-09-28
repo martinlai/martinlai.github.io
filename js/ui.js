@@ -2,38 +2,7 @@ $(document).ready(function (){
 
   for (var project in projects) {
   if (projects.hasOwnProperty(project)) {
-     $('#layout').append(`
-         <div id="`+project+`">
-           <h3 class="`+project+`_close" style="text-align:right; cursor:pointer; padding-right:0.3em"><i class="fa fa-times" aria-hidden="true"></i></a>
-           <h2 class="content-subhead center">`+projects[project].dispname+`</h2>
-           <div class="pure-g">
-             <div class="pure-u-1" style="margin: auto; width:75%">
-               <video class="video_tag" controls preload="metadata">
-                 <source src="resources/`+projects[project].video+`" type="video/mp4">
-               </video>
-             </div>
-           </div>
-
-           <div class="pure-g" style="width:100%; text-align:left;">
-             <div class="pure-u-1 pure-u-md-8-24">
-               <h2 class="content-subhead">Description</h2>
-               <p>`+projects[project].desc+`</p>
-             </div>
-             <div class="pure-u-1 pure-u-md-6-24">
-               <h2 class="content-subhead">Possible Improvements</h2>
-               <p>`+projects[project].improvements+`</p>
-             </div>
-             <div class="pure-u-1 pure-u-md-5-24">
-               <h2 class="content-subhead">Technologies Used</h2>
-               <p>`+projects[project].technologies+`</p>
-             </div>
-             <div class="pure-u-1 pure-u-md-5-24">
-                 <a class="pure-button button-nav" target="_blank" id="github-icon" href="`+projects[project].github+`"><i class="fa fa-github" aria-hidden="true"></i></a>
-             </div>
-           </div>
-         </div>`)
-
-
+     $('#layout').append('<div id="'+project+'"><h3 class="'+project+'_close" style="text-align:right; cursor:pointer; padding-right:0.3em"><i class="fa fa-times" aria-hidden="true"></i></a><h2 class="content-subhead center">'+projects[project].dispname+'</h2><div class="pure-g"><div class="pure-u-1" style="margin: auto; width:75%"><video class="video_tag" controls preload="metadata"><source src="resources/'+projects[project].video+'" type="video/mp4"></video></div> </div> <div class="pure-g" style="width:100%; text-align:left;"> <div class="pure-u-1 pure-u-md-8-24"> <h2 class="content-subhead">Description</h2> <p>'+projects[project].desc+'</p> </div> <div class="pure-u-1 pure-u-md-6-24"> <h2 class="content-subhead">Possible Improvements</h2> <p>'+projects[project].improvements+'</p> </div> <div class="pure-u-1 pure-u-md-5-24"> <h2 class="content-subhead">Technologies Used</h2> <p>'+projects[project].technologies+'</p> </div> <div class="pure-u-1 pure-u-md-5-24"> <a class="pure-button button-nav" target="_blank" id="github-icon" href="'+projects[project].github+'"><i class="fa fa-github" aria-hidden="true"></i></a> </div> </div> </div>')
       $('#'+project).popup({
         color: 'white',
         opacity: 1,

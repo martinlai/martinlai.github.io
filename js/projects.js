@@ -53,7 +53,7 @@ var projects = {
     video:"plant.mp4",
     desc:`Talk2Plants is a embedded hardware/Internet of Things application developed at the Cisco DevNet 2016 hackathon. It won first place in the hackathon as a cost-effective system that allowed
     users to monitor several environment variables such as Temperature, Humidity, and Light levels of a plant remotely by dialing into our automated voice application. The plant system we used to demo has since been
-    decomissioned, but you try the app yourself by calling 1-581-222-9849 which will provide the last known environment values.`,
+    decomissioned, but you can try the app yourself by calling 1-581-222-9849 which will provide the last known environment values.`,
     improvements:"A user dashboard can be created to complement the automated phone application, and alerts can be configured to automatically be sent out via Slack, e-mail or another messaging application when threshold values are surpassed.",
     technologies:"ESP8266 Microcontroller, PHP, Python, Tropo, Firebase",
     github: "https://github.com/m47jiang/T2P"

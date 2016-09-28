@@ -58,7 +58,6 @@ for(var i = 0; i < scrollsections.length; i++) {
 
   $("#"+scrollsections[i]+"-button").click(function (event){
           current_id = jQuery(this).attr("id")
-          console.log(current_id)
           if(current_id == "resume-button") {
             $("#accordion").accordion("option", "active", 0);
           }

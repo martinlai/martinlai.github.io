@@ -88,13 +88,13 @@ var scrollsections = ["about","projects","resume","contact"]
 for(var i = 0; i < scrollsections.length; i++) {
 
   $("#"+scrollsections[i]+"-button").click(function (){
-          if($(this).id == "resume-button") {
+          if(this.id == "resume-button") {
             $("#accordion").accordion("option", "active", 0);
           }
 
           disableScroll();
           $('html, body').stop().animate({
-              scrollTop: $("#"+$(this).id.replace("-button","")).offset().top
+              scrollTop: $("#"+this.id.replace("-button","")).offset().top
           }, 2000, function() {
             enableScroll();
           });

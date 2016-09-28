@@ -24,8 +24,8 @@ var projects = {
     desc:"Libero is a social fitness android application that my team made during the WearHacks 2016 hackathon. It allows multiple nearby users to compete in real-time, for example counting \
     the number of push-ups done in a minute. To track the movement our application interfaced with the Myo Armband, and we had to program a low-pass filter and state machine to accurately identify \
     repetitions during exercises.",
-    improvements:`The scale of the application could be expanded to let people from multiple countries to compete in real time, which would require accounting for latency due to distance.
-    One of our team members was able to acquire $2000 in funding from Duke University for help in developing our application`,
+    improvements:"The scale of the application could be expanded to let people from multiple countries to compete in real time, which would require accounting for latency due to distance.\
+    One of our team members was able to acquire $2000 in funding from Duke University for help in developing our application",
     technologies:"Java, Android Studio, Myo Armband",
     github: "https://github.com/riehseun/Libero"
   },

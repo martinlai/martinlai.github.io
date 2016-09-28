@@ -87,14 +87,16 @@ var scrollsections = ["about","projects","resume","contact"]
 
 for(var i = 0; i < scrollsections.length; i++) {
 
-  $("#"+scrollsections[i]+"-button").click(function (){
-          if(this.id == "resume-button") {
+  $("#"+scrollsections[i]+"-button").click(function (event){
+          current_id = jQuery(this).attr("id")
+          console.log(current_id)
+          if(current_id == "resume-button") {
             $("#accordion").accordion("option", "active", 0);
           }
 
           disableScroll();
           $('html, body').stop().animate({
-              scrollTop: $("#"+this.id.replace("-button","")).offset().top
+              scrollTop: $("#"+current_id.replace("-button","")).offset().top
           }, 2000, function() {
             enableScroll();
           });

@@ -45,7 +45,7 @@ var projects = {
     desc:`LiveAtlas is a web application made during the NASA SpaceApps Waterloo hackathon, which makes use of the MapBox API and NASA historical climate data to show the weather data for the past two years of
     any location on Earth. Try it out yourself at http://earthwatch.me/.`,
     improvements:"Weather data from more than two years in the past can be aggregated, and more developed functionality for comparing climates in multiple areas can be implemented.",
-    technologies:"loltechnologies",
+    technologies:"Javascript, HTML, CSS",
     github: "https://github.com/martinlai/LiveAtlas"
   },
   plant:{

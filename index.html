@@ -9,20 +9,12 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-database.js"></script>
-    <script>
-      var config = {
-        apiKey: "AIzaSyACUEr7ibkExPd0-YT1fy5ylLBPuOPZFgA",
-        authDomain: "martinwebsite-16627.firebaseapp.com",
-        databaseURL: "https://martinwebsite-16627.firebaseio.com",
-        storageBucket: "",
-        messagingSenderId: "721146077778"
-      };
-      firebase.initializeApp(config);
-      var database = firebase.database();
-    </script>
-
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script> 
+    <script type="text/javascript">
+       (function(){
+           emailjs.init("user_gBlTtQulsoPU66cSp3g61");
+       })();
+    </script>   
     <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>

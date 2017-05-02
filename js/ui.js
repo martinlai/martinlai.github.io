@@ -74,12 +74,10 @@ for(var i = 0; i < scrollsections.length; i++) {
 }
 
 $("#send-button").click(function() {
-    console.log($('#name').val());
-        database.ref("messages/"+Date.now()).set({
-          name: $('#name').val(),
-          email: $('#email').val(),
-          message: $('#message').val()
-        });
+    var message = 'From: ' + $('#name').val() +
+                  ' Email: ' + $('#email').val() +
+                  ' Message: ' + $('#message').val();	
+    emailjs.send("gmail", "template_Mv217CWA", {"message_html":message});
 });
 enableScroll();
 });

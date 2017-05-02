@@ -73,11 +73,5 @@ for(var i = 0; i < scrollsections.length; i++) {
       });
 }
 
-$("#send-button").click(function() {
-    var message = 'From: ' + $('#name').val() +
-                  ' Email: ' + $('#email').val() +
-                  ' Message: ' + $('#message').val();	
-    emailjs.send("gmail", "template_Mv217CWA", {"message_html":message});
-});
 enableScroll();
 });
